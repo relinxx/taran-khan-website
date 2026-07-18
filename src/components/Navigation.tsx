@@ -18,11 +18,10 @@ export default function Navigation() {
   return (
     <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-ink/5">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-6 flex justify-between items-baseline">
-        <Link
-          href="/"
-          className="font-display text-xl md:text-2xl tracking-tight text-ink hover:text-dusk transition-colors"
-        >
-          Taran Khan
+        <Link href="/" className="block h-8 md:h-10 w-auto hover:opacity-80 transition-opacity">
+              <img  src="/logo.svg"  
+              alt="Taran Khan" className="h-full w-auto" 
+              />
         </Link>
 
         <nav className="hidden md:flex gap-8 font-sans text-xs uppercase tracking-widest text-ink-light">
