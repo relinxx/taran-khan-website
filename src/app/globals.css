@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-feature-settings: "liga" 1, "kern" 1;
+    @apply bg-paper text-ink antialiased;
+  }
+  ::selection {
+    background-color: rgba(74, 93, 122, 0.15);
+    color: #171412;
+  }
+}
+
+@layer utilities {
+  .hairline {
+    @apply h-px bg-ink/10;
+  }
+}
