@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { book } from "@/data/content";
+import coverArt from "../../data/book_cover.png";
 
 export const metadata: Metadata = {
   title: "Shadow City: A Woman Walks Kabul",
@@ -12,15 +14,40 @@ export default function BookPage() {
     <article className="px-6 md:px-12 lg:px-20 py-16 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 mb-24">
         <div className="lg:col-span-5">
-          <div className="aspect-[2/3] bg-ink/5 w-full max-w-sm border border-ink/10 flex items-center justify-center">
-            <span className="font-serif text-ink/30 text-xl">Book Cover</span>
+          <div className="w-full max-w-sm overflow-hidden border border-ink/10 bg-ink/5 shadow-[0_20px_60px_rgba(3,41,58,0.18)]">
+            <div className="relative aspect-[277/443] w-full">
+              <Image
+                src={coverArt}
+                alt="Shadow City: A Woman Walks Kabul book cover"
+                fill
+                priority
+                sizes="(min-width: 1024px) 28rem, 100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
           <div className="mt-6 flex gap-4">
-            <div className="aspect-[2/3] bg-ink/5 w-24 border border-ink/10 flex items-center justify-center">
-              <span className="font-sans text-xs text-ink/30">UK Ed.</span>
+            <div className="w-24 overflow-hidden border border-ink/10 bg-ink/5">
+              <div className="relative aspect-[277/443] w-full">
+                <Image
+                  src={coverArt}
+                  alt="Shadow City: A Woman Walks Kabul cover thumbnail"
+                  fill
+                  sizes="96px"
+                  className="object-cover"
+                />
+              </div>
             </div>
-            <div className="aspect-[2/3] bg-ink/5 w-24 border border-ink/10 flex items-center justify-center">
-              <span className="font-sans text-xs text-ink/30">India Ed.</span>
+            <div className="w-24 overflow-hidden border border-ink/10 bg-ink/5">
+              <div className="relative aspect-[277/443] w-full">
+                <Image
+                  src={coverArt}
+                  alt="Shadow City: A Woman Walks Kabul cover thumbnail"
+                  fill
+                  sizes="96px"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
