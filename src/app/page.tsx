@@ -36,21 +36,18 @@ export default function HomePage() {
             className="group flex items-center justify-between px-6 py-4 border border-ink/20 hover:border-dusk hover:bg-white/40 transition-all text-ink"
           >
             <span className="font-serif text-lg">Read the book</span>
-            <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
           <Link
             href="/reportage"
             className="group flex items-center justify-between px-6 py-4 border border-ink/20 hover:border-dusk hover:bg-white/40 transition-all text-ink"
           >
             <span className="font-serif text-lg">Reportage</span>
-            <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
           <Link
             href="/workshops"
             className="group flex items-center justify-between px-6 py-4 border border-ink/20 hover:border-dusk hover:bg-white/40 transition-all text-ink"
           >
             <span className="font-serif text-lg">Workshops</span>
-            <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
       </section>

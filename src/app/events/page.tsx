@@ -26,7 +26,7 @@ export default function EventsPage() {
               <div key={i} className="group">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-serif text-xl md:text-2xl group-hover:text-dusk transition-colors text-ink">
-                    {talk.title}
+                    {talk.title === "The Travel Session" ? "the Travel Session" : talk.title}
                   </h3>
                   {talk.year && (
                     <span className="font-sans text-xs uppercase tracking-widest text-ink-light/50">
@@ -42,7 +42,7 @@ export default function EventsPage() {
                   href={talk.url}
                   className="font-sans text-sm uppercase tracking-wider text-dusk hover:text-ink transition-colors"
                 >
-                  {talk.type === "watch" ? "Watch \u2192" : "Event \u2192"}
+                  {talk.type === "watch" ? "Watch" : "Event"}
                 </a>
               </div>
             ))}
@@ -69,7 +69,7 @@ export default function EventsPage() {
                   href={pod.url}
                   className="font-sans text-sm uppercase tracking-wider text-dusk hover:text-ink transition-colors"
                 >
-                  Listen &rarr;
+                  Listen
                 </a>
               </div>
             ))}

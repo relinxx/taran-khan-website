@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { contact, workshops } from "@/data/content";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Workshops & Teaching",
@@ -79,24 +78,6 @@ export default function WorkshopsPage() {
           </div>
         </section>
 
-        <section>
-          <h2 className="font-display text-3xl text-ink mb-8">Work With Me</h2>
-
-          <div className="mb-10">
-            <h3 className="font-sans text-xs uppercase tracking-widest text-dusk mb-4">
-              Manuscript Consultation
-            </h3>
-            <p className="text-ink-light/80 font-serif mb-6 leading-relaxed">
-              {workshops.consultation}
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-ink/20 hover:border-dusk hover:text-dusk transition-colors text-ink font-sans"
-            >
-              Get in touch &rarr;
-            </Link>
-          </div>
-        </section>
       </div>
     </div>
   );

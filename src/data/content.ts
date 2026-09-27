@@ -24,18 +24,6 @@ export const book = {
     "Shadow City is the record of those walks: a personal and meditative portrait of a city the world knows mostly through war. Moving between graveyards and libraries, cinemas and gardens, Khan maps the layered histories of a place in flux, and the lives of the people remaking a city with a 3,000 year old history, and is forever in flux.",
   ],
   extractUrl: "https://www.penguin.co.in/an-excerpt-from-shadow-city/",
-  praise: [
-    { text: "A fabulous piece of writing… I recommend it unreservedly.", source: "William Dalrymple" },
-    { text: "A brilliant book.", source: "Christina Lamb, author of Farewell Kabul" },
-    { text: "Offers a unique on-the-ground view of the city… a refreshing counterpoint to the macho foreign-correspondent genre…", source: "Amelia Gentleman, the Guardian", long: true },
-    { text: "Khan illuminates Kabul's life-affirming humanity.", source: "Times Literary Supplement" },
-    { text: "By excavating Afghanistan's forgotten past, Khan rescues its future, too. Her lyrical prose brings to life the most daring truth a writer can offer: that these tragedies were not preordained, and another Afghanistan is possible.", source: "Anand Gopal, author of No Good Men Among the Living", long: true },
-    { text: "Taran Khan's achievement is to have caught it in an affecting and beautifully observed portrait, a word-map that will endure.", source: "Tim Mackintosh-Smith" },
-    { text: "An intricate, intimate portrait of a heartbreaking city, its people and its past, written with nuance, love and attention.", source: "Alice Albinia, author of Empires of the Indus" },
-    { text: "Taran Khan invites and leads us into a wonderful journey through the streets of Kabul, its history and culture. Step by step with her, we breathe in the city's air of mysticism and mystery.", source: "Atiq Rahimi, author of The Patience Stone", long: true },
-    { text: "Powerfully evocative.", source: "Kapka Kassabova" },
-    { text: "Shadow City moved me to tears… no book has done a more honest and heart-warming job in recent years… Thrilling.", source: "Supriya Nair, Mumbai Mirror", long: true },
-  ],
   buyLinks: [
     { label: "Bookshop.org", url: "https://uk.bookshop.org/p/books/shadow-city-a-woman-walks-kabul-taran-khan/259353?ean=9781784708023" },
     { label: "Hive", url: "https://www.hive.co.uk/Product/Taran-Khan/Shadow-City--A-Woman-Walks-Kabul/25413943" },
@@ -44,7 +32,7 @@ export const book = {
     { label: "Amazon UK", url: "https://www.amazon.co.uk/Shadow-City-Woman-Walks-Kabul/dp/0143453068" },
   ],
   reviewLinks: [
-    { label: "the Guardian", url: "https://www.theguardian.com/books/2019/dec/24/shadow-city-by-taran-khan-review-a-woman-walks-kabul" },
+    { label: "The Guardian", url: "https://www.theguardian.com/books/2019/dec/24/shadow-city-by-taran-khan-review-a-woman-walks-kabul" },
     { label: "Times Literary Supplement", url: "https://www.the-tls.com/world/travel/shadow-city-a-woman-walks-kabul-taran-khan-review-oliver-balch" },
     { label: "Mumbai Mirror", url: "https://mumbaimirror.indiatimes.com/opinion/columnists/supriya-nair/discovering-kabul-on-foot/articleshow/72374100.html" },
     { label: "Outlook Traveller", url: "https://www.outlooktraveller.com/travelnews/glamping/book-review-shadow-city-a-woman-walks-kabul" },
@@ -74,7 +62,7 @@ export const reportage = {
     { title: "Shadow City, Invisible City: Walking Through an Ever-Changing Kabul", pub: "Literary Hub", year: "2021", url: "https://lithub.com/shadow-city-invisible-city-walking-through-an-ever-changing-kabul/", excerpt: "An essay written after the Taliban's takeover of Kabul on the changing nature of the city and the lives of its residents." },
     { title: "The Buddha of Kabul", pub: "Guernica", year: "2024", url: "https://www.guernicamag.com/the-buddha-of-kabul/", excerpt: "What the excavation of a Buddhist monastery on the fringes of Kabul reveals about the layers of history beneath the city's surface." },
     { title: "The Dam", pub: "Granta", year: "2021", url: "https://granta.com/the-dam-taran-n-khan/", excerpt: "Walking the length of Steindamm in Hamburg reveals a city of Afghan refugees and asylum seekers." },
-    { title: "Mumbai: a Virtual Tour Through Books, Film, Music and Food", pub: "the Guardian", year: "2021", url: "https://www.theguardian.com/travel/2021/mar/22/mumbai-virtual-tour-india-through-books-film-music-food", excerpt: "A portrait of the city through its culture, for readers travelling in their imagination." },
+    { title: "Mumbai: a Virtual Tour Through Books, Film, Music and Food", pub: "The Guardian", year: "2021", url: "https://www.theguardian.com/travel/2021/mar/22/mumbai-virtual-tour-india-through-books-film-music-food", excerpt: "A portrait of the city through its culture, for readers travelling in their imagination." },
     { title: "The Making of a Refugee", pub: "Himal Southasian", year: "2019", url: "https://www.himalmag.com/the-making-of-a-refugee-taran-khan-germany-afghanistan-2019/", excerpt: "A long-form series reported from Hamburg, on the lives and work of Afghan artists, filmmakers and musicians in exile." },
     { title: "How Ranveer Singh Made It", pub: "The Caravan", year: "2016", url: "https://caravanmagazine.in/reportage/fast-forward-ranveer-singh", excerpt: "A profile of the Bollywood star, and how stardom is manufactured and maintained in Indian pop culture." },
   ],
@@ -86,8 +74,6 @@ export const workshops = {
     { title: "Creative nonfiction", venue: "Faber Academy, London", year: "2026" },
     { title: "Creative nonfiction", venue: "Arvon Foundation", year: "" },
   ],
-  consultation:
-    "One-to-one consultations for writers working on nonfiction – from memoir, narrative journalism, travel, and essay — focused on structure, voice, and shaping your material for submission.",
 };
 
 export const events = {

@@ -26,30 +26,6 @@ export default function BookPage() {
               />
             </div>
           </div>
-          <div className="mt-6 flex gap-4">
-            <div className="w-24 overflow-hidden border border-ink/10 bg-ink/5">
-              <div className="relative aspect-[277/443] w-full">
-                <Image
-                  src={coverArt}
-                  alt="Shadow City: A Woman Walks Kabul cover thumbnail"
-                  fill
-                  sizes="96px"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <div className="w-24 overflow-hidden border border-ink/10 bg-ink/5">
-              <div className="relative aspect-[277/443] w-full">
-                <Image
-                  src={coverArt}
-                  alt="Shadow City: A Woman Walks Kabul cover thumbnail"
-                  fill
-                  sizes="96px"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="lg:col-span-7">
@@ -92,33 +68,12 @@ export default function BookPage() {
               href={book.extractUrl}
               className="inline-flex items-center gap-2 text-dusk hover:text-ink transition-colors font-sans"
             >
-              Read an extract <span>&rarr;</span>
+              Read an extract
               <span className="text-xs text-ink-light/50">(Al Jazeera)</span>
             </a>
           </div>
         </div>
       </div>
-
-      <section className="mb-24">
-        <h2 className="font-display text-3xl md:text-4xl mb-12 text-ink">
-          Praise
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-          {book.praise.map((item, i) => (
-            <div
-              key={i}
-              className={item.long ? "md:col-span-2 max-w-3xl" : ""}
-            >
-              <p className="font-serif text-xl md:text-2xl leading-relaxed mb-3 text-ink">
-                &ldquo;{item.text}&rdquo;
-              </p>
-              <cite className="font-sans text-sm uppercase tracking-wider text-ink-light not-italic">
-                &mdash; {item.source}
-              </cite>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
         <div>
@@ -128,9 +83,16 @@ export default function BookPage() {
               <a
                 key={l.label}
                 href={l.url}
-                className="px-4 py-2 border border-ink/20 hover:border-dusk hover:text-dusk transition-colors text-sm uppercase tracking-wider font-sans text-ink"
+                aria-label={`Order from ${l.label}`}
+                title={l.label}
+                className="inline-flex h-12 w-14 items-center justify-center border border-ink/20 hover:border-dusk hover:text-dusk transition-colors text-ink"
               >
-                {l.label}
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  {l.label === "Bookshop.org" && <><path d="M4 7h16v13H4z" /><path d="M4 11h16M8 7V4h8v3M9 14h6" /></>}
+                  {l.label === "Hive" && <><path d="m12 2 8.7 5v10L12 22l-8.7-5V7z" /><path d="m12 7 4.3 2.5v5L12 17l-4.3-2.5v-5z" /></>}
+                  {l.label === "Stanfords" && <><path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-6h6v6M3 9h18" /></>}
+                  {l.label.startsWith("Amazon") && <><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L22 9H6" /><circle cx="10" cy="21" r="1" /><circle cx="18" cy="21" r="1" /><path d="M9 12h8" /></>}
+                </svg>
               </a>
             ))}
           </div>
@@ -138,7 +100,7 @@ export default function BookPage() {
 
         <div>
           <h3 className="font-display text-2xl mb-6 text-ink">
-            Reviews & Press
+            Reviews &amp; Press
           </h3>
           <div className="flex flex-wrap gap-3">
             {book.reviewLinks.map((l) => (
@@ -158,7 +120,7 @@ export default function BookPage() {
                 href={l.url}
                 className="text-sm text-ink-light hover:text-dusk transition-colors underline underline-offset-4 decoration-1"
               >
-                {l.label} &rarr;
+                {l.label}
               </a>
             ))}
           </div>
@@ -166,18 +128,7 @@ export default function BookPage() {
       </div>
 
       <section className="pt-12 border-t border-ink/10">
-        <h3 className="font-display text-2xl mb-6 text-ink">
-          Other Book Contributions
-        </h3>
-        <div className="space-y-6">
-          {book.contributions.map((c, i) => (
-            <div key={i}>
-              <p className="font-serif text-lg text-ink">{c.title}</p>
-              <p className="text-sm text-ink-light">{c.meta}</p>
-              <p className="text-sm text-ink-light/70 mt-1">{c.note}</p>
-            </div>
-          ))}
-        </div>
+        <a href="/book/contributions" target="_blank" rel="noopener noreferrer" className="font-display text-2xl text-ink hover:text-dusk transition-colors">Other book contributions</a>
       </section>
     </article>
   );
