@@ -107,7 +107,7 @@ export default function BookPage() {
               <a
                 key={l.label}
                 href={l.url}
-                className="px-4 py-2 border border-ink/20 hover:border-dusk hover:text-dusk transition-colors text-sm uppercase tracking-wider font-sans text-ink"
+                className="px-4 py-2 border border-ink/20 hover:border-dusk hover:text-dusk transition-colors text-sm font-sans text-ink"
               >
                 {l.label}
               </a>
